@@ -2,3 +2,4 @@ log/
 .vagrant/
 .idea/
 .key/
+sengoku.cfg
