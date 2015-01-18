@@ -3,16 +3,17 @@
 __author__ = 'contee'
 
 """
-player
+card
 ~~~~~~~~~~~~~~
 
-file commment here.
+カードランキング取得
 
 """
 
 import os, re
 from scrapy import Spider, FormRequest, Request, Selector
 from ..items import BushoCard
+from sengokustat.settings import NET_ID, NET_PASS
 
 class CardRankSpider(Spider):
 
@@ -21,8 +22,9 @@ class CardRankSpider(Spider):
     allowed_domains = ["pc.sengoku-taisen.com"]
 
     def start_requests(self):
+        self.parameters = dict()
         return [FormRequest("http://pc.sengoku-taisen.com/Login.htm",
-                                   formdata={'account': 'contee44', 'password': 'y84m6d29'},
+                                   formdata={'account': NET_ID, 'password': NET_PASS},
                                    callback=self.logged_in)]
 
     def logged_in(self, response):

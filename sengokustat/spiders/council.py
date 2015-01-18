@@ -6,13 +6,14 @@ __author__ = 'contee'
 council
 ~~~~~~~~~~~~~~
 
-file commment here.
+戦況情報取得
 
 """
 
 import os, re, json
 from datetime import datetime, timedelta
 from scrapy import Spider, FormRequest, Request
+from sengokustat.settings import NET_ID, NET_PASS
 
 update_time_list = (u"0430", u"1000", u"1100", u"1200", u"1300", u"1400", u"1500", u"1600", u"1700"
 u"1800", u"1900", u"2000", u"2030", u"2100", u"2200", u"2300")
@@ -24,8 +25,9 @@ class CouncilDataSpider(Spider):
     allowed_domains = ["pc.sengoku-taisen.com"]
 
     def start_requests(self):
+        self.parameters = dict()
         return [FormRequest("http://pc.sengoku-taisen.com/Login.htm",
-                                   formdata={'account': 'contee44', 'password': 'y84m6d29'},
+                                   formdata={'account': NET_ID, 'password': NET_PASS},
                                    callback=self.logged_in)]
 
     def logged_in(self, response):

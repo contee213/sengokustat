@@ -2,4 +2,5 @@ log/
 .vagrant/
 .idea/
 .key/
+*.pyc
 sengoku.cfg

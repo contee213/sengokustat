@@ -6,7 +6,7 @@ __author__ = 'contee'
 keiryaku
 ~~~~~~~~~~~~~~
 
-file commment here.
+計略詳細取得
 
 """
 

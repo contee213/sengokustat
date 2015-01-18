@@ -3,10 +3,10 @@
 __author__ = 'contee'
 
 """
-character
+character_list
 ~~~~~~~~~~~~~~
 
-file commment here.
+武将一覧取得
 
 """
 

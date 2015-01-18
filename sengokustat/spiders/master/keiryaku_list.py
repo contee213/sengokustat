@@ -6,7 +6,7 @@ __author__ = 'contee'
 keiryaku_list
 ~~~~~~~~~~~~~~
 
-file commment here.
+計略一覧取得
 
 """
 

@@ -6,7 +6,7 @@ __author__ = 'contee'
 force
 ~~~~~~~~~~~~~~
 
-file commment here.
+大名家使用率取得
 
 """
 

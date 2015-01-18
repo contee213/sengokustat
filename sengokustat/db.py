@@ -12,5 +12,5 @@ file commment here.
 
 from pymongo import MongoClient
 
-client = MongoClient("54.65.219.104")
+client = MongoClient("xxx.xxx.xxx.xxx")
 db = client['sengokustat']

@@ -6,7 +6,7 @@ __author__ = 'contee'
 character
 ~~~~~~~~~~~~~~
 
-file commment here.
+武将詳細取得
 
 """
 
